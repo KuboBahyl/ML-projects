@@ -1,8 +1,8 @@
 remove(list=objects())
-movies <- read.csv("movies.csv", header=TRUE,
-                   stringsAsFactors=FALSE)
-# First look
-hist(movies$imdb_score, nclass="FD", main="Histogram hodnoten? na IMDB", xlab="Hodnotenie",
+movies <- read.csv("movies.csv", header=TRUE, stringsAsFactors=FALSE)
+
+# Raw look
+hist(movies$imdb_score, nclass="FD", main="Histogram hodnotení IMDB", xlab="Hodnotenie",
      ylab="Frekvencia", xlim=c(2,9), col="gray")
 
 # cutting
